@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/ability_scores_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ability Scores"
+                android:textColor="#000000"
+                android:textSize="16sp">
+            </TextView>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D9D9D9"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/strength_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="STRENGTH"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/strength_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/strength_section"
+                android:text="Score: 10"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/strength_modifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/strength_score"
+                android:text="Modifier: 0"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/strength_proficiency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/strength_proficiency_value"
+                android:layout_centerVertical="true"
+                android:text="Saving Throw Proficient:"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/strength_proficiency_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+            </CheckBox>
+
+            <TextView
+                android:id="@+id/strength_saving_throw_modifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/strength_modifier"
+                android:text="Saving Throw Modifier: 0"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D9D9D9"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/dexterity_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="DEXTERITY"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/dexterity_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dexterity_section"
+                android:text="Score: 14"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/dexterity_modifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dexterity_score"
+                android:text="Modifier: +2"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/dexterity_proficiency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/dexterity_proficiency_value"
+                android:layout_centerVertical="true"
+                android:text="Saving Throw Proficient:"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/dexterity_proficiency_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+            </CheckBox>
+
+            <TextView
+                android:id="@+id/dexterity_saving_throw_modifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dexterity_modifier"
+                android:text="Saving Throw Modifier: +2"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D9D9D9"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/constitution_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="CONSTITUTION"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/constitution_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/constitution_section"
+                android:text="Score: 16"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/constitution_modifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/constitution_score"
+                android:text="Modifier: +3"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/constitution_proficiency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/constitution_proficiency_value"
+                android:layout_centerVertical="true"
+                android:text="Saving Throw Proficient:"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/constitution_proficiency_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+            </CheckBox>
+
+            <TextView
+                android:id="@+id/constitution_saving_throw_modifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/constitution_modifier"
+                android:text="Saving Throw Modifier: +3"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D9D9D9"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/intelligence_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="INTELLIGENCE"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/intelligence_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/intelligence_section"
+                android:text="Score: 10"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/intelligence_modifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/intelligence_score"
+                android:text="Modifier: 0"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/intelligence_proficiency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/intelligence_proficiency_value"
+                android:layout_centerVertical="true"
+                android:text="Saving Throw Proficient:"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/intelligence_proficiency_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+            </CheckBox>
+
+            <TextView
+                android:id="@+id/intelligence_saving_throw_modifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/intelligence_modifier"
+                android:text="Saving Throw Modifier: 0"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D9D9D9"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/wisdom_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="WISDOM"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/wisdom_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wisdom_section"
+                android:text="Score: 16"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/wisdom_modifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wisdom_score"
+                android:text="Modifier: +3"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/wisdom_proficiency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/wisdom_proficiency_value"
+                android:layout_centerVertical="true"
+                android:text="Saving Throw Proficient:"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/wisdom_proficiency_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:checked="true"></CheckBox>
+
+            <TextView
+                android:id="@+id/wisdom_saving_throw_modifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wisdom_modifier"
+                android:text="Saving Throw Modifier: +5"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D9D9D9"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/charisma_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="CHARISMA"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/charisma_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/charisma_section"
+                android:text="Score: 8"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/charisma_modifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/charisma_score"
+                android:text="Modifier: -1"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/charisma_proficiency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/charisma_proficiency_value"
+                android:layout_centerVertical="true"
+                android:text="Saving Throw Proficient:"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/charisma_proficiency_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:checked="true">
+            </CheckBox>
+
+            <TextView
+                android:id="@+id/charisma_saving_throw_modifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/charisma_modifier"
+                android:text="Saving Throw Modifier: +1"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:id="@+id/armor_class_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D9D9D9"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/armor_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Armor Class"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+                <TextView
+                    android:id="@+id/armor_class_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/armor_class"
+                    android:layout_centerInParent="true"
+                    android:text="19"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/initiative_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/armor_class_section"
+                android:background="#D9D9D9"
+                android:padding="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/initiative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Initiative"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+                <TextView
+                    android:id="@+id/initiative_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/initiative"
+                    android:layout_centerInParent="true"
+                    android:text="+2"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/speed_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/initiative_section"
+                android:background="#D9D9D9"
+                android:padding="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Speed"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+                <TextView
+                    android:id="@+id/speed_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/speed"
+                    android:layout_centerInParent="true"
+                    android:text="30"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/level_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/speed_section"
+                android:background="#D9D9D9"
+                android:padding="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Level"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+                <TextView
+                    android:id="@+id/level_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/level"
+                    android:layout_centerInParent="true"
+                    android:text="2"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:id="@+id/maximum_health_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D9D9D9"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/maximum_health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maximum Health"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+                <TextView
+                    android:id="@+id/maximum_health_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/maximum_health"
+                    android:layout_centerInParent="true"
+                    android:text="25"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/current_health_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/maximum_health_section"
+                android:background="#D9D9D9"
+                android:padding="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/current_health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current Health"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+                <TextView
+                    android:id="@+id/current_health_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/current_health"
+                    android:layout_centerInParent="true"
+                    android:text="+2"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/temp_health_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/current_health_section"
+                android:background="#D9D9D9"
+                android:padding="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/temp_health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temp Health"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+                <TextView
+                    android:id="@+id/temp_health_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/temp_health"
+                    android:layout_centerInParent="true"
+                    android:text="0"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
