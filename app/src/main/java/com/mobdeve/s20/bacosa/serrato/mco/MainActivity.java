@@ -74,4 +74,10 @@ public class MainActivity extends AppCompatActivity {
         displayName.setText(name);
         username.setText(user);
     }
+
+    public void openSettingsPage(View view) {
+        Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+        startActivity(intent);
+    }
+
 }

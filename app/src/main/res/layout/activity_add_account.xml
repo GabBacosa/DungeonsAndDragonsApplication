@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#ECF0F1">
+
+    <!-- New Username input field -->
+    <EditText
+        android:id="@+id/edit_new_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Username"
+        android:padding="12dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="text"
+        android:layout_centerHorizontal="true" />
+
+    <!-- New Password input field -->
+    <EditText
+        android:id="@+id/edit_new_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Password"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="textPassword"
+        android:layout_below="@id/edit_new_username"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Create Account button -->
+    <Button
+        android:id="@+id/btn_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textColor="#FFF"
+        android:background="#1C1C1C"
+        android:layout_below="@id/edit_new_password"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

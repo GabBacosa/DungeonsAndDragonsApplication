@@ -72,4 +72,10 @@ public class ProfileViewActivity extends AppCompatActivity {
         Toast.makeText(ProfileViewActivity.this, "Profile updated", Toast.LENGTH_SHORT).show();
         finish();  // Close the profile page and go back
     }
+
+    public void openSettingsPage(View view) {
+        Intent intent = new Intent(ProfileViewActivity.this, SettingsActivity.class);
+        startActivity(intent);
+    }
+
 }
